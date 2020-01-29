@@ -1,2 +1,3 @@
 # iVvy SDK for .NET
-Ivvy.API makes it easy to use the iVvy API version 1+ and build extensions on the iVvy platform.
+
+Forked from the original ivvycode master repo to add in Custom Fields to the Booking entity and update to .NET Standard 2.1
