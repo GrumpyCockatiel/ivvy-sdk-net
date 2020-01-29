@@ -17,6 +17,15 @@ namespace Ivvy
             );
         }
 
+        /// <summary></summary>
+        /// <param name="perPage"></param>
+        /// <param name="start"></param>
+        /// <returns></returns>
+        public async Task<ResultOrError<ResultList<Venue.Venue>>> GetVenueListAsync( int perPage, int start )
+        {
+            return await this.CallAsync<ResultList<Venue.Venue>>( "venue", "getVenueList", new { perPage = perPage, start = start } );
+        }
+
         /// <summary>
         /// Returns a collection of venue accommodation rooms.
         /// </summary>

@@ -13,6 +13,12 @@ namespace Ivvy
         /// <returns></returns>
         Task<ResultOrError<Venue.Venue>> GetVenueAsync(int id);
 
+        /// <summary></summary>
+        /// <param name="perPage"></param>
+        /// <param name="start"></param>
+        /// <returns></returns>
+        Task<ResultOrError<ResultList<Venue.Venue>>> GetVenueListAsync( int perPage, int start );
+
         /// <summary>
         /// Returns a collection of venue accommodation rooms.
         /// </summary>
