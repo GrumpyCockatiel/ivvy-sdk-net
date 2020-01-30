@@ -18,8 +18,9 @@ namespace Ivvy.Venue.Bookings
 		[JsonProperty( "displayName" )]
 		public string DisplayName { get; set; }
 
+		/// <summary>Custom field values can be anything</summary>
 		[JsonProperty( "fieldValue" )]
-		public string FieldValue { get; set; }
+		public object FieldValue { get; set; }
 	}
 }
 

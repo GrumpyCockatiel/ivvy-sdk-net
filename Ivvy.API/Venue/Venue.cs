@@ -3,11 +3,11 @@ using Newtonsoft.Json;
 
 namespace Ivvy.Venue
 {
-    /// <summary>
-    /// An iVvy venue.
-    /// </summary>
+    /// <summary>Venue entity</summary>
     public class Venue : ISerializable
     {
+        /// <summary>Venue ID</summary>
+		/// <remarks>A String here but integer in other places.</remarks>
         [JsonProperty("id")]
         public string Id { get; set; }
 
