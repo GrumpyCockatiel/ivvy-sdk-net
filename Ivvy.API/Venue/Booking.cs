@@ -4,18 +4,18 @@ using System;
 
 namespace Ivvy.Venue
 {
+    public enum BookingStatus
+    {
+        Prospective = 1,
+        Tentative = 2,
+        Confirmed = 3,
+        Cancelled = 4,
+        Ordering = 5,
+        NotAccepted = 6
+    }
+
     public class Booking : ISerializable
     {
-        public enum StatusOptions
-        {
-            Prospective = 1,
-            Tentative = 2,
-            Confirmed = 3,
-            Cancelled = 4,
-            Ordering = 5,
-            NotAccepted = 6
-        }
-
         [JsonProperty( "id" )]
         public int Id { get; set; }
 
@@ -47,7 +47,7 @@ namespace Ivvy.Venue
         public Contact.Contact Contact { get; set; }
 
         [JsonProperty( "currentStatus" )]
-        public StatusOptions CurrentStatus { get; set; }
+        public BookingStatus CurrentStatus { get; set; }
 
         [JsonProperty( "totalAmount" )]
         public float TotalAmount { get; set; }
