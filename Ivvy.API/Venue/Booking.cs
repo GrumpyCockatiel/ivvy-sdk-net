@@ -61,7 +61,7 @@ namespace Ivvy.Venue
         [JsonProperty( "accountTimezone" )]
         public string AccountTimezone { get; set; }
 
-        [JsonProperty( "venueTimezone" )]
+		[JsonProperty( "venueTimezone" )]
         public string VenueTimezone { get; set; }
 
         [JsonProperty( "createdDate" )]
