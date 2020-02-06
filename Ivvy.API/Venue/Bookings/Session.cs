@@ -4,9 +4,7 @@ using System;
 
 namespace Ivvy.Venue.Bookings
 {
-    /// <summary>
-    /// A single session on an iVvy venue booking.
-    /// </summary>
+    /// <summary>A single session on an iVvy venue booking.</summary>
     public class Session : ISerializable
     {
         [JsonProperty("id")]
@@ -20,6 +18,12 @@ namespace Ivvy.Venue.Bookings
 
         [JsonProperty("endDate")]
         public DateTime EndDate { get; set; }
+
+        [JsonProperty("startTime")]
+        public string StartTime { get; set; }
+
+        [JsonProperty("endTime")]
+        public string EndTime { get; set; }
 
         [JsonProperty("spaceId")]
         public int SpaceId { get; set; }
