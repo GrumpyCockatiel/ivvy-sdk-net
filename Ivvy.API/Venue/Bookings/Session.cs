@@ -20,10 +20,10 @@ namespace Ivvy.Venue.Bookings
         public DateTime EndDate { get; set; }
 
         [JsonProperty("startTime")]
-        public string StartTime { get; set; }
+        public TimeSpan StartTime { get; set; }
 
         [JsonProperty("endTime")]
-        public string EndTime { get; set; }
+        public TimeSpan EndTime { get; set; }
 
         [JsonProperty("spaceId")]
         public int SpaceId { get; set; }
